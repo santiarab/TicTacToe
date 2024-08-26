@@ -6,7 +6,6 @@ MAX_ATTEMPTS = 5
 TIMEOUT = 2
 PORT = 5001
 
-
 def connectToServer(port:int):
     intento = 0
     while intento < MAX_ATTEMPTS:
@@ -71,4 +70,4 @@ if __name__ == '__main__':
         ss = connectToServer(PORT)
         play(ss)
     except Exception as e:
-        print(e)
+        print("Exception is: ", e)
